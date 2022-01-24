@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Methods
 {
-    public static class SampleMethods
+    public static class MathShortcuts
     {
-        public static void SayHi()
+        public static void Add(double x, double y)
         {
-            Console.WriteLine("Hello User!");
+            Console.WriteLine($"The value of {x} + {y} = {x+y}");
         }
     }
 }
