@@ -12,13 +12,15 @@
 // DRY - Don't repeat yourself
 // SOLID - SRP - Single Responsiblity Principle
 
-Console.Write("What is your name: ");
-
-string name = Console.ReadLine();
+string name = ConsoleMessages.GetUsersName();
 
 ConsoleMessages.SayHi(name);
 
-MathShortcuts.Add(5, 3);
+// double result = MathShortcuts.Add(5, 3);
+Console.WriteLine($"the result is {MathShortcuts.Add(5, 3)}");
+
+double[] vals = new double[] { 2,5,6,21,52,98 };
+MathShortcuts.AddAll(vals);
 
 ConsoleMessages.SayGoodbye();
 

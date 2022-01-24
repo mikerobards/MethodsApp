@@ -14,6 +14,14 @@ namespace Methods
             Console.WriteLine("I hope you are having a good day!");
         }
 
+        public static string GetUsersName()
+        {
+            Console.Write("What is your name: ");
+            string name = Console.ReadLine();
+
+            return name;
+        }
+
         public static void SayGoodbye()
         {
             Console.WriteLine("Goodbye, my user.");
