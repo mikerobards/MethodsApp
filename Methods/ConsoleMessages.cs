@@ -22,11 +22,27 @@ namespace Methods
             return name;
         }
 
+        // Tuple
+
+        public static (string firstName, string lastName) GetFullName()
+        {
+            Console.Write("What is your first name: ");
+            string firstName = Console.ReadLine();
+
+            Console.Write("What is your last name: ");
+            string lastName = Console.ReadLine();
+
+            return (firstName, lastName);   
+
+        }
+
         public static void SayGoodbye()
         {
             Console.WriteLine("Goodbye, my user.");
             Console.WriteLine("Thank you for coming!");
             Console.WriteLine("Adios!");
         }
+
+        
     }
 }
